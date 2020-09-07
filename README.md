@@ -5,11 +5,14 @@ A tutorial for flutter testing guided by YouTube videos of Flutter Explained.
 ## Videos
 - [Flutter Explained - Intro into Testing](https://youtu.be/AA4I10rG_x8)
 - [Flutter Explained - Unit Testing] - WIP
-- [Flutter Explained - Component Testing] - WIP
-- [Flutter Explained - Integration Testing] - WIP
-- [Flutter Explained - E2E Testing] - WIP
 
-## Articles
+## Keep in Mind
+Unit Tests should be ...
+- easy to write and maintainable
+- should be readable
+- should be reliable
+- should be fast
+- should be independent
 
 ## Getting Started
 This project is a starting point for a Flutter application.

@@ -1,9 +1,17 @@
-# flutter_testing_tutorial
+# Flutter Explained Testing Tutorial
 
-A tutorial for flutter testing guided by YouTube videos of Flutter Explained
+A tutorial for flutter testing guided by YouTube videos of Flutter Explained.
+
+## Videos
+- [Flutter Explained - Intro into Testing](https://youtu.be/AA4I10rG_x8)
+- [Flutter Explained - Unit Testing] - WIP
+- [Flutter Explained - Component Testing] - WIP
+- [Flutter Explained - Integration Testing] - WIP
+- [Flutter Explained - E2E Testing] - WIP
+
+## Articles
 
 ## Getting Started
-
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:

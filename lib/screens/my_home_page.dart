@@ -4,14 +4,15 @@ import 'package:flutter_testing_tutorial/util/time_helper.dart';
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var timeOfTheDay = TimeHelper.getTimeOfTheDay(DateTime.now());
+
     return Scaffold(
       body: Container(
         width: double.infinity,
         height: double.infinity,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image:
-                AssetImage("assets/images/${TimeHelper.getTimeOfTheDay()}.jpg"),
+            image: AssetImage("assets/images/$timeOfTheDay.jpg"),
             fit: BoxFit.cover,
           ),
         ),
@@ -20,7 +21,7 @@ class MyHomePage extends StatelessWidget {
             SizedBox(height: 64),
             FittedBox(
               child: Text(
-                "Good ${TimeHelper.getTimeOfTheDay()}",
+                "Good $timeOfTheDay",
                 style: TextStyle(
                   fontSize: 48,
                   fontWeight: FontWeight.bold,

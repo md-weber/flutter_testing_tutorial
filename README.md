@@ -7,7 +7,7 @@ A tutorial for flutter testing guided by YouTube videos of Flutter Explained.
 - [Flutter Explained - Intro into Testing](https://youtu.be/AA4I10rG_x8)
 - [Flutter Explained - Unit Testing](https://www.youtube.com/watch?v=C1kzJH8SiuE&)
 - [Flutter Explained - Widget Testing](https://www.youtube.com/watch?v=pgMI5nmAem0)
-- [Flutter Explained - Integration Testing] - Coming soon
+- [Flutter Explained - Integration Testing](https://www.youtube.com/watch?v=WPEsnJgW99M&feature=youtu.be)
 
 ## Follow the tutorial
 You can follow the tutorial explained in the video if you check out the different "tutorial" branches.

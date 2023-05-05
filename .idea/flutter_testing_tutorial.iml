@@ -21,6 +21,9 @@
       <excludeFolder url="file://$MODULE_DIR$/testing_packages/fluttium/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/testing_packages/fluttium/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/testing_packages/fluttium/build" />
+      <excludeFolder url="file://$MODULE_DIR$/integration_testing/tutorial/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/integration_testing/tutorial/build" />
+      <excludeFolder url="file://$MODULE_DIR$/integration_testing/tutorial/.pub" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

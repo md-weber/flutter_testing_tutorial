@@ -30,7 +30,7 @@ writing your first tests.
 3. [Unit Testing](./unit_testing)
 4. [Integration Testing](./integration_testing)
     - [Solution](./integration_testing/solution)
-    - [Todos](./integration_testing/tutorial)
+    - [Tutorial](./integration_testing/tutorial)
 
 ## Keep in Mind
 

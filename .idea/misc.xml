@@ -1,0 +1,5 @@
+<project version="4">
+  <component name="SuppressKotlinCodeStyleNotification">
+    <option name="disableForAll" value="true" />
+  </component>
+</project>

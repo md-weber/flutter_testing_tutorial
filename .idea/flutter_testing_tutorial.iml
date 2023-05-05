@@ -15,6 +15,12 @@
       <excludeFolder url="file://$MODULE_DIR$/integration_testing/solution/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/integration_testing/solution/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/integration_testing/solution/build" />
+      <excludeFolder url="file://$MODULE_DIR$/testing_packages/honey/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/testing_packages/honey/build" />
+      <excludeFolder url="file://$MODULE_DIR$/testing_packages/honey/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/testing_packages/fluttium/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/testing_packages/fluttium/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/testing_packages/fluttium/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

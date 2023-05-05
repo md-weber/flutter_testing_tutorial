@@ -1,0 +1,8 @@
+description: My first flow
+---
+- tapOn: "Email"
+- inputText: "flutterexp@gmail.com"
+- tapOn: "Password"
+- inputText: "123456"
+- tapOn: "Login"
+- expectVisible: "How is your mood"

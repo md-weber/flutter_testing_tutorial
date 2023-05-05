@@ -1,6 +1,6 @@
 {
-    "name": "patrol",
-    "short_name": "patrol",
+    "name": "basic_app",
+    "short_name": "basic_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

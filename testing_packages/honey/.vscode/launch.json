@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations":
+      [
+        {
+            "name": "Honey Mode",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": ["--dart-define", "HONEY=true"]
+          }
+      ],
+  }

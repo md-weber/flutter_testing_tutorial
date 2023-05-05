@@ -1,0 +1,12 @@
+set $email to "flutterexp@gmail.com"
+put "123456" into $password
+
+verify that "Email" is visible
+tap on "Email"
+enter $email
+
+verify that "Password" is visible
+tap on "Password"
+enter $password
+
+tap on "Login"

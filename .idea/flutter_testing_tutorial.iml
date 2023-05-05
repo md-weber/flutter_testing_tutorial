@@ -9,11 +9,17 @@
       <excludeFolder url="file://$MODULE_DIR$/basic_app/build" />
       <excludeFolder url="file://$MODULE_DIR$/basic_app/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/basic_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/testing_packages/patrol/build" />
+      <excludeFolder url="file://$MODULE_DIR$/testing_packages/patrol/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/testing_packages/patrol/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/integration_testing/solution/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/integration_testing/solution/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/integration_testing/solution/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Flutter Plugins" level="project" />
     <orderEntry type="library" name="Dart SDK" level="project" />
     <orderEntry type="library" name="Dart Packages" level="project" />
+    <orderEntry type="library" name="Flutter Plugins" level="project" />
   </component>
 </module>

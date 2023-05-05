@@ -1,6 +1,6 @@
 {
-    "name": "honey",
-    "short_name": "honey",
+    "name": "basic_app",
+    "short_name": "basic_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

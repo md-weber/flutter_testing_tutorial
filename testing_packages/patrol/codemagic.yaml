@@ -1,0 +1,54 @@
+# Automatically generated on 2023-01-18 UTC from https://codemagic.io/app/63c4f37de983a06c18fe1b5c/settings
+# Note that this configuration is not an exact match to UI settings. Review and adjust as necessary.
+
+workflows:
+  default-workflow:
+    name: Default Workflow
+    max_build_duration: 20
+    environment:
+      groups:
+        - GCloud
+        - Firebase
+      flutter: default
+      xcode: latest
+      cocoapods: default
+      java: 11.0.18
+    scripts:
+      - |
+        # set up debug keystore
+        rm -f ~/.android/debug.keystore
+        keytool -genkeypair \
+          -alias androiddebugkey \
+          -keypass android \
+          -keystore ~/.android/debug.keystore \
+          -storepass android \
+          -dname 'CN=Android Debug,O=Android,C=US' \
+          -keyalg 'RSA' \
+          -keysize 2048 \
+          -validity 10000
+      - |
+        # set up local properties
+        echo "flutter.sdk=$HOME/programs/flutter" > "$FCI_BUILD_DIR/android/local.properties"
+      - flutter pub get
+      - name: Install Patrol
+        script: dart pub global activate patrol_cli
+      - name: Export Patrol
+        script: export PATH="$PATH":"$HOME/.pub-cache/bin"
+      - name: Build Debug Android Test
+        working_directory: android
+        script: ./gradlew :app:assembleDebugAndroidTest
+      - name: Build Android APK for Patrol Test
+        working_directory: android
+        script: ./gradlew :app:assembleDebug -Ptarget="$(pwd)/../integration_test/app_test.dart"
+      - name: Authorize access to Firebase Test Lab with a service account
+        script: |
+          set -e # exit on first failed command
+          echo ${GCLOUD_KEY_FILE?} > ./gcloud_key_file.json
+          gcloud auth activate-service-account --key-file=gcloud_key_file.json
+          gcloud --quiet config set project ${FIREBASE_PROJECT}
+      - gcloud firebase test android run --type instrumentation --app ./build/app/outputs/apk/debug/app-debug.apk --test build/app/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+    artifacts:
+      - app/build/outputs/**/**/*.apk
+    cache:
+      cache_paths:
+        - ~/.pub-cache
